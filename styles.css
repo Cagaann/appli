@@ -1,0 +1,70 @@
+/* Container de la CAR */
+li {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;  /* Espace entre les éléments de la tâche */
+}
+
+/* Section des informations de la tâche */
+.task-title,
+.task-date,
+.task-desc {
+  margin: 0;
+  padding: 2px 0;
+}
+
+/* Priorité */
+.task-priority {
+  font-weight: bold;
+  font-size: 14px;
+  color: #e74c3c; /* Couleur rouge pour la priorité */
+  margin: 0; /* Annule la marge par défaut */
+  text-align: center; /* Centre la priorité */
+}
+
+/* Conteneur des boutons et de la priorité */
+.buttons-container {
+  display: flex;
+  justify-content: space-between; /* Sépare les boutons et la priorité */
+  align-items: center; /* Aligne verticalement les éléments au centre */
+  width: 100%; /* Utilise toute la largeur disponible */
+}
+
+/* Boutons pour la CAR */
+button {
+  font-size: 12px;  /* Augmente légèrement la taille de la police */
+  padding: 4px 10px; /* Augmente la taille du padding pour les rendre plus longs */
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  height: 25px;  /* Ajuste la hauteur du bouton */
+}
+
+/* Bouton Supprimer */
+button.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  width: 80px; /* Augmente la largeur du bouton Supprimer */
+}
+
+/* Bouton Terminée */
+button.complete-btn {
+  background-color: #2ecc71;  /* Vert pour "Terminée" */
+  color: white;
+  width: 80px; /* Augmente la largeur du bouton Terminée */
+}
+
+/* Si la tâche est terminée, on applique le style "completed" */
+li.completed {
+  background-color: #d5f5e3; /* Fond légèrement vert pour les tâches terminées */
+  text-decoration: line-through; /* Barrer le texte */
+}

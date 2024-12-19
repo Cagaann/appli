@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Gestionnaire de Choses à Réaliser (CAR)</title>
+</head>
+<body>
+  <h1>Gestionnaire de Choses à Réaliser (CAR)</h1>
+  
+  <div class="container">
+    <!-- Formulaire pour ajouter une CAR -->
+    <form id="car-form">
+      <input type="text" id="car-title" placeholder="Titre de la CAR" required>
+      <input type="date" id="car-date" required>
+      <textarea id="car-desc" placeholder="Description"></textarea>
+      <select id="priority">
+        <option value="faible">Faible</option>
+        <option value="modérée">Modérée</option>
+        <option value="haute">Haute</option>
+      </select>
+      <button type="submit">Ajouter CAR</button>
+    </form>
+
+    <!-- Liste des CAR -->
+    <ul id="car-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
